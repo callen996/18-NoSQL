@@ -7,7 +7,7 @@
     "start": "node --watch index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Conor Allen",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.4",
