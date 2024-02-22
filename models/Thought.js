@@ -27,15 +27,15 @@ const thoughtSchema = new Schema(
   }
 );
 
-// Create a virtual property `getTags` that gets the amount of tags associated with an application
+// Create a virtual property `getReactions` that gets the amount of reactions associated with an thought
 thoughtSchema
   .virtual('getResponses')
   // Getter
   .get(function () {
-    return this.tags.length;
+    return this.reactions.length;
   });
 
-// Initialize our Application model
+// Initialize our Thought model
 const Thought = model('thought', thoughtSchema);
 
 module.exports = Thought;
